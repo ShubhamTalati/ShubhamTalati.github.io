@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div class="logo">About me<span>.</span></div>
+        <nav>
+          <ul class="flex">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Service</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div id="search" class="flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search..." />
+          </div>
+        </nav>
+      </header>
+	  
+	  <section class="about flex" id="about">
+        <div class="about-one">
+          <h1>Hy! I am</h1>
+          <span class="auto">Shubham Talati</span>
+          <p>
+		  I’m Shubham Talati,
+		  I develop websites with HTML, CSS and JavaScript. 
+            I am passionate about leveraging my diverse backgrounds to decipher
+			challenging problems and create delightful experiences.
+			
+			Being a diligent, hardworking and result oriented, 
+			I always work towards achieving best result on each project I lay my hands on.
+          </p>
+          <div class="btns">
+		  
+		  <a href="./Images/About/Resume_Shubham.pdf" download>
+         <button>Download CV</button>
+         </a>
+           
+          </div>
+        </div>
+        <div class="about-two">
+          <img src="./Images/About/1.png" height="400" alt="" />
+        </div>
+      </section>
+      <br /><br /><br />
+
+     
+
+      <section class="projects" id="project">
+        <h1>My Awesome <br /><span>Project</span></h1>
+        <p>
+        ● Built an eCommerce platform for men, women and kids
+    	 to place an order for the differenttypes of Watches.
+		Enabled payment gateway using Paytm API to accept hassle-free payments.
+        </p>
+			
+        <div class="projects-div flex div-1">
+          <img src="./Images/Projects/5.png" alt="" />
+          <h3>Ecommerce Website</h3>
+          <p>
+            Built an eCommerce platform for men, women and kids to place an order for the different types of Watches.
+          </p>
+		 
+		 <button onclick="window.location.href='https://github.com/ShubhamTalati/TheWatchShop';">
+      Live Preview
+    </button>
+        </div>
+      </section>
+      <br /><br />
+
+     
+      <section class="contact" id="contact">
+        <h1>Let Us <span>Talk!</span></h1>
+        <div class="box flex">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name.." />
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email.." />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="60"
+            rows="5"
+            placeholder="Enter your Message here...."
+          ></textarea>
+          <div>
+            <input type="submit" class="send" value="Send" />
+          </div>
+        </div>
+      </section>
+      <footer class="flex" id="footer">
+        <div class="copy">@copywrite 2022 Shubham.</div>
+        <div class="social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: ["Shubham Talati"],
+        typeSpeed: 60,
+        backSpeed: 70,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
